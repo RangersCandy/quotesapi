@@ -1,0 +1,10 @@
+version: '3.4'
+
+services:
+  quotesapi:
+    image: quotesapi
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    ports:
+      - 5002:5002
